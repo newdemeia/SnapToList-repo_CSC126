@@ -1,0 +1,14 @@
+# Snap-to-List dependencies
+# Tested with Python 3.9 - 3.11
+
+opencv-python>=4.8.0
+# MediaPipe's legacy `mp.solutions.face_mesh` API is used; newer releases may drop it,
+# and older releases require NumPy < 2.
+mediapipe>=0.10.9,<0.10.21
+numpy>=1.24,<2.0
+customtkinter>=5.2.0
+pillow>=10.0.0
+
+# Optional: auto-suggest product names from label text (OCR).
+# Also requires the Tesseract OCR engine to be installed on your system.
+# pytesseract>=0.3.10
